@@ -38,6 +38,9 @@
 #    include <endian.h>
 #endif
 
+#define CTL_HW          6               /* generic cpu/io */
+#define HW_NCPU          3              /* int: number of cpus */
+
 #include <map>
 #include <string>
 #include <list>
