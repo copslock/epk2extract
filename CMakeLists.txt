@@ -13,6 +13,9 @@ set(CMAKE_C_FLAGS_TEST "-Ofast -funroll-loops -fprefetch-loop-arrays -march=nati
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_CXX_STANDARD 11)
 
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
 add_definitions(-D_GNU_SOURCE -D__USE_XOPEN_EXTENDED)
 add_definitions(-DUSE_MMAP) #for gzip
 add_definitions(-DGZIP_SUPPORT -DLZO_SUPPORT -DCOMP_DEFAULT=\"gzip\" -DXATTR_SUPPORT -DXATTR_DEFAULT) #for squashfs
